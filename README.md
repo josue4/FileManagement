@@ -31,7 +31,7 @@ Il est important de ne jamais stocker de mots de passe en clair dans votre scrip
 Output.exe -extract:C:\Output.ps1
 
 
-# English
+# English :
 
 #AppFile
 Management of archive entries and exits.
