@@ -1,0 +1,36 @@
+<Window x:Class="Forms2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Forms2"
+        mc:Ignorable="d"
+        Title="Formulaire de Retour" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="381*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Identification" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="110" Margin="1,138,0,0" Grid.Column="1" FontFamily="Cambria" FontSize="16"/>
+        <Label Content="Utilisateur" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="110" Margin="1,254,0,0" Grid.Column="1" FontFamily="Cambria" FontSize="16"/>
+        <Label Content="Date creation" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="110" Margin="1,79,0,0" Grid.Column="1" FontFamily="Cambria" FontSize="16"/>
+        <Label Content="Localisation" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="122" Margin="446,143,0,0" Grid.Column="1" FontFamily="Cambria" FontSize="16"/>
+        <Label Content="Type Contrat" HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="122" Margin="442,199,0,0" Grid.Column="1" FontFamily="Cambria" FontSize="16"/>
+        <Label Content="Nom client" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="110" Margin="1,200,0,0" Grid.Column="1" FontFamily="Cambria" FontSize="16"/>
+        <Label Content="Date de retour" HorizontalAlignment="Left" Height="33" VerticalAlignment="Top" Width="122" Margin="442,252,0,0" Grid.Column="1" FontFamily="Cambria" FontSize="16"/>
+        <Label x:Name="entree_lblDatederetour" Content="" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="110" Margin="607,254,0,0" Grid.Column="1" FontFamily="Cambria" FontSize="16"/>
+        <Label Content="Date de sort final" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="131" Margin="442,87,0,0" Grid.Column="1" FontFamily="Cambria" FontSize="16"/>
+        <Button x:Name="btn_apply" Content="Sauvegarder" HorizontalAlignment="Left" Height="30" Margin="401,374,0,0" VerticalAlignment="Top" Width="151" Grid.Column="1" FontFamily="Cambria" FontSize="16"/>
+        <Button x:Name="btn_save" Content="Fermer" HorizontalAlignment="Left" Height="30" Margin="586,374,0,0" VerticalAlignment="Top" Width="151" Grid.Column="1" FontFamily="Cambria" FontSize="16"/>
+        <Label x:Name="entree_lblcreation" Content="" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="159" Margin="142,86,0,0" Grid.Column="1" FontFamily="Cambria" FontSize="16"/>
+        <Label x:Name="entree_lblsortfinal" Content="" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="110" Margin="607,91,0,0" Grid.Column="1" FontFamily="Cambria" FontSize="16"/>
+        <Label x:Name="entree_lblLocalisation" Grid.Column="1" Content="" HorizontalAlignment="Left" Height="30" Margin="606,143,0,0" VerticalAlignment="Top" Width="111" FontFamily="Cambria" FontSize="16"/>
+        <Label x:Name="entree_lblIdentification" Grid.Column="1" Content="" HorizontalAlignment="Left" Height="25" Margin="142,138,0,0" VerticalAlignment="Top" Width="159" FontFamily="Cambria" FontSize="16"/>
+        <Label x:Name="entree_lblclient" Grid.Column="1" Content="" HorizontalAlignment="Left" Height="34" Margin="142,0,0,0" VerticalAlignment="Center" Width="159" FontFamily="Cambria" FontSize="16"/>
+        <Label x:Name="entree_lblsocial" Grid.Column="1" Content="" HorizontalAlignment="Left" Height="28" Margin="607,198,0,0" VerticalAlignment="Top" Width="110" FontFamily="Cambria" FontSize="16"/>
+        <Label x:Name="entree_lbluser" Grid.Column="1" Content="" HorizontalAlignment="Left" Height="28" Margin="139,254,0,0" VerticalAlignment="Top" Width="162" FontFamily="Cambria" FontSize="16"/>
+        <Label x:Name="entree_lblstatut" Grid.Column="1" Content="" HorizontalAlignment="Left" Height="27" Margin="139,362,0,0" VerticalAlignment="Top" Width="162" FontSize="16" FontFamily="Cambria"/>
+        <Label Content="N Dossier" HorizontalAlignment="Left" Height="27" Margin="1,305,0,0" VerticalAlignment="Top" Width="110" FontSize="16" FontFamily="Cambria" Grid.Column="1"/>
+        <Label x:Name="entree_lbldossier" Content="" HorizontalAlignment="Left" Height="27" Margin="139,305,0,0" VerticalAlignment="Top" Width="162" FontSize="16" FontFamily="Cambria" Grid.Column="1"/>
+    </Grid>
+</Window>
