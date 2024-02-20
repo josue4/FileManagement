@@ -1,0 +1,37 @@
+<Window x:Class="Forms2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Forms2"
+        mc:Ignorable="d"
+        Title="Formulaire de Synchronisation" Height="450" Width="800">
+    <Grid x:Name="new_txt_creation">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="381*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Identification" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="110" Margin="19,138,0,0" Grid.ColumnSpan="2" FontFamily="Cambria" FontSize="16"/>
+        <Label Content="Statut" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="110" Margin="19,254,0,0" Grid.ColumnSpan="2" FontFamily="Cambria" FontSize="16"/>
+        <Label Content="Utilisateur" HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="110" Margin="19,311,0,0" Grid.ColumnSpan="2" FontFamily="Cambria" FontSize="16"/>
+        <Label Content="Date creation" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="110" Margin="19,83,0,0" Grid.ColumnSpan="2" FontFamily="Cambria" FontSize="16"/>
+        <Label Content="Localisation" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="110" Margin="456,138,0,0" Grid.Column="1" FontFamily="Cambria" FontSize="16"/>
+        <Label Content="Type Contrat" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="110" Margin="456,200,0,0" Grid.Column="1" FontFamily="Cambria" FontSize="16"/>
+        <Label Content="Nom client" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="110" Margin="19,200,0,0" Grid.ColumnSpan="2" FontFamily="Cambria" FontSize="16"/>
+        <Label Content="Date de sortie" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="110" Margin="456,254,0,0" Grid.Column="1" FontFamily="Cambria" FontSize="16"/>
+        <Label Content="Date de sort final" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="131" Margin="456,83,0,0" Grid.Column="1" FontFamily="Cambria" FontSize="16"/>
+        <Label Content="N Dossier" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="27" Margin="19,362,0,0" VerticalAlignment="Top" Width="110" FontSize="16" FontFamily="Cambria"/>
+        <Button x:Name="btn_apply" Content="Sauvegarder" HorizontalAlignment="Left" Height="30" Margin="401,374,0,0" VerticalAlignment="Top" Width="151" Grid.Column="1" FontFamily="Cambria" FontSize="16"/>
+        <Button x:Name="btn_save" Content="Fermer" HorizontalAlignment="Left" Height="30" Margin="586,374,0,0" VerticalAlignment="Top" Width="151" Grid.Column="1" FontFamily="Cambria" FontSize="16"/>
+        <TextBox x:Name="nouvelle_txtb_creation" Grid.Column="1" HorizontalAlignment="Left" Height="25" Margin="119,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139"/>
+        <TextBox x:Name="nouvelle_txtb_Id" Grid.Column="1" HorizontalAlignment="Left" Height="25" Margin="119,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139"/>
+        <TextBox x:Name="nouvelle_txtb_NomClient" Grid.Column="1" HorizontalAlignment="Left" Height="30" Margin="119,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139"/>
+        <TextBox x:Name="nouvelle_txtb_Utilisateur" Grid.Column="1" HorizontalAlignment="Left" Height="25" Margin="119,311,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139"/>
+        <TextBox x:Name="nouvelle_txtb_DateDestruction" Grid.Column="1" HorizontalAlignment="Left" Height="25" Margin="598,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139"/>
+        <TextBox x:Name="nouvelle_txtb_Localisation" Grid.Column="1" HorizontalAlignment="Left" Height="25" Margin="598,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139"/>
+        <TextBox x:Name="nouvelle_txtb_DateSortie" Grid.Column="1" HorizontalAlignment="Left" Height="25" Margin="598,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139"/>
+        <ComboBox x:Name="nouvelle_ddlsocial" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="598,200,0,0" VerticalAlignment="Top" Width="139" FontSize="16" FontFamily="Cambria"/>
+        <ComboBox x:Name="nouvelle_ddlStatut" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="119,261,0,0" VerticalAlignment="Top" Width="139" FontSize="16" FontFamily="Cambria"/>
+        <TextBox x:Name="nouvelle_txtb_dossier" Grid.Column="1" HorizontalAlignment="Left" Height="25" Margin="119,362,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139"/>
+    </Grid>
+</Window>
