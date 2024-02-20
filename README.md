@@ -29,3 +29,34 @@ PS C:> ps2exe .\source.ps1 .\target.exe
 Il est important de ne jamais stocker de mots de passe en clair dans votre script compilé. En effet, il est possible de décompiler un script compilé avec l'option `-extract`. Voici un exemple de commande permettant de décompiler le script stocké dans le fichier `Output.exe` :
 
 Output.exe -extract:C:\Output.ps1
+
+
+# English
+
+#AppFile
+Management of archive entries and exits.
+WPF application in PowerShell Xaml
+
+## Compiling the application
+
+To compile the application, you can use the [PS2EXE](https://github.com/MScholtes/PS2EXE) tool. Here are the steps to follow:
+
+1. Install the `ps2exe` module with the following command:
+   
+PS C:> Install-Module ps2exe
+
+
+2. Use the `Invoke-ps2exe` or `ps2exe` command to compile your PowerShell script into an executable file. For example, to compile a script named `source.ps1` into an executable file named `target.exe`, use one of the following commands:
+
+PS C:> Invoke-ps2exe .\source.ps1 .\target.exe
+
+or with:
+
+PS C:>ps2exe.\source.ps1.\target.exe
+
+
+## Password security
+
+It is important to never store plaintext passwords in your compiled script. Indeed, it is possible to decompile a script compiled with the `-extract` option. Here is an example command to decompile the script stored in the `Output.exe` file:
+
+Output.exe -extract:C:\Output.ps1
